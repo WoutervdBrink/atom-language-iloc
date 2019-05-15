@@ -1,0 +1,43 @@
+# If this is your first time writing a language grammar, check out:
+#   - https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/
+
+'scopeName': 'source.iloc'
+'name': 'Iloc'
+'fileTypes': [
+    'iloc'
+]
+'patterns': [
+    {
+        'match': '//[^\r\n]*',
+        'name': 'comment'
+    },
+    {
+        'match': '-?[0-9]+',
+        'name': 'constant.numeric'
+    },
+    {
+        'match': '"([^\n\r]|\\")*?"',
+        'name': 'string.quoted.double'
+    },
+    {
+        'match': '(=>|->|<-)',
+        'name': 'keyword.operator'
+    },
+    {
+        # 'match': 'add|sub|mult|div|addI|subI|rsubI|multI|divI|rdivI|lshift|lshiftI|rshift|rshiftI|or|orI|and|andI|xor|xorI|loadI|load|loadAI|loadAO|cload|cloadAI|cloadAO|store|storeAI|storeAO|cstore|cstoreAI|cstoreAO|i2i|c2c|c2i|i2c|cmp_LT|cmp_LE|cmp_EQ|cmp_GE|cmp_GT|cmp_NE|cbr|jumpI|jump|tbl|push|pop|cpush|cpop|in|out|cin|cout|comment',
+        'match': 'multI?|addI?|subI?|rsubI|r?divI?|lshiftI?|rshift|rshiftI?|orI?|andI?|xorI?|loadA?(O|I)?|cload(A(I|O))?|store(A(I|O))?|cstore(A(I|O))?|i2i|c2c|c2i|i2c|cmp_LT|cmp_LE|cmp_EQ|cmp_GE|cmp_GT|cmp_NE|cbr|jumpI?|tbl|push|pop|cpush|cpop|in|out|cin|cout|comment',
+        'name': 'support.function'
+    },
+    {
+        'match': 'r_[a-zA-Z][a-zA-Z0-9-_]*',
+        'name': 'variable.language'
+    },
+    {
+        'match': '[a-zA-Z][a-zA-Z0-9-_]*:',
+        'name': 'entity.name.section'
+    },
+    {
+        'match': '(@|#)?[a-zA-Z][a-zA-Z0-9-_]*',
+        'name': 'variable.other'
+    }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "language-iloc",
+  "version": "0.0.0",
+  "description": "Adds ILOC support to Atom.",
+  "author": {
+    "name": "Wouter van den Brink",
+    "email": "git@woutervdb.com"
+  },
+  "keywords": [
+    "language",
+    "grammar",
+    "iloc"
+  ],
+  "repository": "https://github.com/WoutervdBrink/atom-language-iloc",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
