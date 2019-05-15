@@ -1,6 +1,6 @@
 {
   "name": "language-iloc",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Adds ILOC support to Atom.",
   "author": {
     "name": "Wouter van den Brink",
